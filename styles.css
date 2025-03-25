@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+  background-color: #f8f9fa;
+  color: #333;
+  margin: 0;
+}
+
+.container {
+  max-width: 1100px;
+  /* Increased for better spacing */
+  background: #fff;
+  margin: 40px auto;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+header {
+  text-align: center;
+  background: #0073b1;
+  color: white;
+  padding: 20px;
+  border-radius: 8px 8px 0 0;
+}
+
+/* FLEXBOX LAYOUT */
+.content {
+  display: flex;
+  flex-direction: row;
+  /* Keep both panels side by side */
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+/* LEFT: Experience Section */
+.experience {
+  width: 65%;
+  padding: 20px;
+  background: #ffffff;
+}
+
+/* RIGHT: Sidebar */
+.sidebar {
+  width: 30%;
+  padding: 20px;
+  background: #f1f1f1;
+  border-radius: 0 0 8px 8px;
+}
+
+/* Make it responsive */
+@media (max-width: 768px) {
+  .content {
+    flex-direction: column;
+    /* Stack panels on small screens */
+  }
+
+  .experience,
+  .sidebar {
+    width: 100%;
+  }
+}
+
+/* SECTION HEADERS */
+.section h2 {
+  border-bottom: 2px solid #0073b1;
+  padding-bottom: 5px;
+}
+
+/* Skills Section */
+.skills .skill {
+  background: #0073b1;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 15px;
+  margin: 4px;
+  display: inline-block;
+}
